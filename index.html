@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>document</title>
+    <!-- SCRIPTS -->
+                rango: <input type="range" name="rango" id="rango" min="1" max="10" step="1" title="1">
+                <p>Nota <span id="nota"></span></p>
+                <script>
+                    var slider = document.getElementById( "rango");
+                    var output = document.getElementById( "nota");
+                    output.innerHTML = slider.value;
+                   
+                    slider.oninput = function() {
+                    output.innerHTML = this.value;
+                    }
+                    </script>
+    <script>
+        function myfuncion() {
+             var nom= document.getElementById("nomb").value;
+             var adreça= document.getElementById("direc").value;
+             var edat= document.getElementById("edad").value;
+            alert("benvingut: "+nom+" "+adreça+","+edat);
+         }
+    </script>
+</head>
+<body>
+        <!-- Titulo -->
+         <p class="point"> TITULO</p>
+         <p id="pont">hola <br> bon dia</p>
+         <hr>
+        <!-- Contenido -->
+    <form method="post" enctype="text">
+        <p onclick="this.style.color='blue'"> nomb <input onclick="this.style.color='blue'" type="text" id="nomb"> </p>
+        <p>Dirección <input type="text" id="direc"> </p>
+        <p ondblclick="this.style.color='pink'">edat <input ondblclick="this.style.color='pink'" type="text" id="edad" onblur="myfuncion()"> </p>
+    </form>
+
+    <p class="abc"> Prueba </p>
+<hr>
+                        <h3 class="tproductos">Que productos le debemos a Steve Jobs</h3>
+                
+                                    <p class="productos">cosa1</p>
+                                    <p class="productos">cosa2</p>                                    
+                                    <p class="productos">cosa3</p>
+         <section>
+            <form action="web.php" method="GET">
+                Password <input type="password" name="pass" id="pass">
+                Número <input type="number" name="numero" step="any">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="reset">
+                Color <input type="color" name="micolor" value="#0000ff">
+                
+         </section>
+        <!-- SCRIPTS -->
+        rango: <input type="range" name="rango" id="rango" min="1" max="10" step="1" title="1">
+        <p>Nota <span id="nota"></span></p>
+        <script>
+            var slider = document.getElementById( "rango");
+            var output = document.getElementById( "nota");
+            output.innerHTML = slider.value;
+        
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+            </script>
+         <form action="pagina1.php" method="get">
+            <fieldset class="F1">
+                <legend class="T1">
+                    Accede a tu Área Clientes
+                </legend>
+
+                <p>
+                    Elige tu documento:
+                    <br>
+                    <input type="radio" name="Cdoc" value="DNI" checked> DNI o Tarjeta de residencia
+                    <br>
+                    <input type="radio" name="Cdoc" value="Pasaporte"> Pasaporte
+                </p>
+                <p>
+                    Número de documento:
+                    <br>
+                    <input type="text" placeholder="DNI o Tarjeta de residencia" size="30">
+                </p>
+                <p>
+                    Fecha de Nacimiento:
+                    <br>
+                    <input type="date" name="fechaN" id="fechaN">
+                </p>
+                <p>
+                    <input type="checkbox" name="recordar" id="recordar"> Recordar?
+                    <br>
+                    <center><input  class="Entrar" type="submit" id="Entrar" value="Entrar"></center>
+                </p>
+            </fieldset>
+        </form>
+                                    
+</body>
+</html>

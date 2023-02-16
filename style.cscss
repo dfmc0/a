@@ -1,0 +1,7 @@
+h3.tproductos{
+    counter-reset: productos;
+}
+p.productos::before{
+    content: counter(productos)". ";
+    counter-increment: productos 1;
+}

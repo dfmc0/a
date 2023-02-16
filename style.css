@@ -1,0 +1,15 @@
+p.point::first-letter{
+    font-size: 4ch;
+    
+}
+h3.tproductos{
+    counter-reset: productos;
+}
+p.productos::before{
+    content: counter(productos)". ";
+    counter-increment: productos 1;
+}
+p.abc:hover{
+    background-color: yellow;
+    color: red;
+}
